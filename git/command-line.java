@@ -1,6 +1,6 @@
 
 // Create branch
-git checkout -b feature/ONEBANK-1478
+git checkout -b <branch>
 
 _______________________________________________________
 // tmp files - ignore
@@ -12,11 +12,11 @@ git stash apply // which redoes previously stashed changes, but keeps them on st
 
 _______________________________________________________
 // Undo a git ADD - remove files staged for a git commit
-git reset filename.txt
+git reset <file>
 
 _______________________________________________________
 // Undo working copy MODIFICATOINS of one file
-git checkout -- file
+git checkout -- <file>
 
 // You can also check out a particular version of a file:
 
