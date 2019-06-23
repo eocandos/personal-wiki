@@ -1,19 +1,19 @@
 # SUMMARY
 git checkout --<file> // DISCARD changes // DISCARD:CHECKOUT
 git reset --<file> // remove frmo ADD	// RESET:-ADD
+git merge --abort // cancel merge
 
+_______________________________________________________
+# Create branch
+git checkout -b <branch>
 
 _______________________________________________________
 # branch local to remote
 git push -u origin <branch>
 
 _______________________________________________________
-# abort merge (Testing)
+# abort merge
 git merge --abort
-
-_______________________________________________________
-# Create branch
-git checkout -b <branch>
 
 _______________________________________________________
 # tmp files - ignore
