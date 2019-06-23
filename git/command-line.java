@@ -1,9 +1,14 @@
+# SUMMARY
+git checkout --<file> // DISCARD changes // DISCARD:CHECKOUT
+git reset --<file> // remove frmo ADD	// RESET:-ADD
 
-// Create branch
+
+_______________________________________________________
+# Create branch
 git checkout -b <branch>
 
 _______________________________________________________
-// tmp files - ignore
+# tmp files - ignore
 git stash 
 git stash save // which enables including temporary commit message, which will help you identify changes, among with other options
 git stash list // which lists all previously stashed commits (yes, there can be more) that were not poped
@@ -11,11 +16,11 @@ git stash pop // which redoes previously stashed changes and removes them from s
 git stash apply // which redoes previously stashed changes, but keeps them on stashed list
 
 _______________________________________________________
-// Undo a git ADD - remove files staged for a git commit
+# Undo a git ADD - remove files staged for a git commit
 git reset <file>
 
 _______________________________________________________
-// Undo working copy MODIFICATOINS of one file
+# Undo working copy MODIFICATOINS of one file
 git checkout -- <file>
 
 // You can also check out a particular version of a file:
