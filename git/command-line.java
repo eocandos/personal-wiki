@@ -2,6 +2,11 @@
 git checkout --<file> // DISCARD changes // DISCARD:CHECKOUT
 git reset --<file> // remove frmo ADD	// RESET:-ADD
 
+
+_______________________________________________________
+# branch local to remote
+git push -u origin <branch>
+
 _______________________________________________________
 # abort merge (Testing)
 git merge --abort
