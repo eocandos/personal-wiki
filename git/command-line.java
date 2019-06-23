@@ -2,6 +2,9 @@
 git checkout --<file> // DISCARD changes // DISCARD:CHECKOUT
 git reset --<file> // remove frmo ADD	// RESET:-ADD
 
+_______________________________________________________
+# abort merge (Testing)
+git merge --abort
 
 _______________________________________________________
 # Create branch
