@@ -1,6 +1,6 @@
 # SUMMARY
 git checkout --<file> // DISCARD changes // DISCARD:CHECKOUT
-git reset --<file> // remove frmo ADD	// RESET:-ADD2
+git reset --<file> // remove frmo ADD	// RESET:-ADD
 
 
 _______________________________________________________
