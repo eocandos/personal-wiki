@@ -1,22 +1,22 @@
 # SUMMARY: WORKING
 
-	git checkout --<file> 'DISCARD changes'
-	git reset --<file> 'remove frmo ADD'
-	git reset --soft HEAD~1 'reset last COMMIT'
-	git merge --abort 'cancel MERGE'
+	git reset --<file> /** remove ADD*/
+	git checkout --<file> /** DISCARD changes */
+
+	git reset --soft HEAD~1 /** reset last COMMIT */
+	git checkout <commit> /** Jump between commits */
+	
+	git merge --abort /** cancel MERGE */
 
 _______________________________________________________
 # Create branch
 git checkout -b <branch>
-
 _______________________________________________________
 # branch local to remote
 git push -u origin <branch>
-
 _______________________________________________________
 # abort merge
 git merge --abort
-
 _______________________________________________________
 # reset commit 
 
@@ -53,6 +53,14 @@ git checkout origin/master -- file  # upstream master
 git checkout HEAD -- file           # the version from the most recent commit
 git checkout HEAD^ -- file          # the version before the most recent commit
 
+_______________________________________________________
+
+// If you want to temporarily go back to it, fool around, then come back to where you are, all you have to do is check out the desired commit:
+// This will detach your HEAD, that is, leave you with no branch checked out:
+git checkout 0d1d7fc32
+
+// Or if you want to make commits while you're there, go ahead and make a new branch while you're at it:
+git checkout -b old-state 0d1d7fc32
 _______________________________________________________
 
 // Sources
