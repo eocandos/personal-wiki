@@ -1,4 +1,4 @@
-# SUMMARY: WORKING
+# SUMMARY: WORKING // Test change for return to previuos file version
 
 	git reset --<file> /** remove ADD*/
 	git checkout --<file> /** DISCARD changes */
