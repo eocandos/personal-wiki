@@ -1,7 +1,7 @@
 # SUMMARY: WORKING
 
 	git reset --<file> /** remove ADD*/
-	git reset --soft/hard <commit> /** reset last COMMIT preserve changes/ dischard changes */	
+	git reset --soft/hard <commit> /** reset COMMIT: preserve changes/ dischard changes */	
 	git checkout --<file> /** DISCARD changes */
 	git checkout <commit> /** Jump between commits */
 	git checkout <commit> -- <file> /** Revert file to previous commit */
@@ -72,6 +72,9 @@ git reset --hard HEAD~1
 'This command will sync the local repository with the remote repository getting rid of every change you have made on your local.'
 git reset --hard origin '(Test)'
 _______________________________________________________
+
+'Show log'
+git log --oneline 
 
 // Sources
 
