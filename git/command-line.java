@@ -1,4 +1,4 @@
-# SUMMARY: WORKING
+# SUMMARY: WORKING // test jump between commits
 
 	git reset --<file> /** remove ADD*/
 	git checkout --<file> /** DISCARD changes */
