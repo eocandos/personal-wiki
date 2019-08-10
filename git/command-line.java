@@ -63,6 +63,9 @@ git checkout 0d1d7fc32
 git checkout -b old-state 0d1d7fc32
 _______________________________________________________
 
+// Show changes from commits
+git show <commit>
+_______________________________________________________
 // Sources
 
 - https://github.com/joshnh/Git-Commands
