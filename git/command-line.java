@@ -1,4 +1,4 @@
-# SUMMARY: WORKING
+# SUMMARY: WORKING // testing dischard commit 
 
 	git reset --<file> /** remove ADD*/
 	git reset --soft/hard <commit> /** reset last COMMIT preserve changes/ dischard changes */	
