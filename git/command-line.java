@@ -1,4 +1,4 @@
-# SUMMARY: WORKING // Test change for return to previuos file version
+# SUMMARY: WORKING
 
 	git reset --<file> /** remove ADD*/
 	git checkout --<file> /** DISCARD changes */
@@ -61,11 +61,15 @@ git checkout 0d1d7fc32
 
 // Or if you want to make commits while you're there, go ahead and make a new branch while you're at it:
 git checkout -b old-state 0d1d7fc32
+
 _______________________________________________________
 
 // Show changes from commits
 git show <commit>
+git show <commit> --name-only
+
 _______________________________________________________
+
 // Sources
 
 - https://github.com/joshnh/Git-Commands
