@@ -1,13 +1,21 @@
 # SUMMARY: WORKING
 
 	git reset --<file> /** remove ADD*/
-	git checkout --<file> /** DISCARD changes */	
-	git reset <file> /** Revert commit in a file */
+	git reset --soft/hard <commit> /** reset last COMMIT preserve changes/ dischard changes */	
+	git checkout --<file> /** DISCARD changes */
 	git checkout <commit> /** Jump between commits */
 	git checkout <commit> -- <file> /** Revert file to previous commit */
-	git reset --soft HEAD~1 /** reset last COMMIT */
 	git merge --abort /** cancel MERGE */
 
+_______________________________________________________
+
+'Don"t do it if you have uncommitted work you want to keep.'
+git reset --hard 0d1d7fc32
+
+'Alternatively, if there"s work to keep:'
+git stash
+git reset --hard 0d1d7fc32
+git stash pop
 _______________________________________________________
 'Create branch'
 git checkout -b <branch>
@@ -19,17 +27,6 @@ git push -u origin <branch>
 _______________________________________________________
 'abort merge'
 git merge --abort
-
-_______________________________________________________
-
-'Delete the most recent commit, keeping the work you have done:'
-git reset --soft HEAD~1
-
-'Delete the most recent commit, destroying the work you have done:'
-git reset --hard HEAD~1
-
-'This command will sync the local repository with the remote repository getting rid of every change you have made on your local.'
-git reset --hard origin '(Test)'
 
 _______________________________________________________
 
@@ -64,6 +61,16 @@ _______________________________________________________
 git show <commit>
 git show <commit> --name-only
 
+_______________________________________________________
+
+'Delete the most recent commit, (keeping) the work you have done:'
+git reset --soft HEAD~1
+
+'Delete the most recent commit, (destroying) the work you have done:'
+git reset --hard HEAD~1
+
+'This command will sync the local repository with the remote repository getting rid of every change you have made on your local.'
+git reset --hard origin '(Test)'
 _______________________________________________________
 
 // Sources
